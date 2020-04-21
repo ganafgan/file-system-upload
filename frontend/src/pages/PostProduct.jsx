@@ -22,7 +22,7 @@ class PostProduct extends React.Component{
 			fd.append('data', data)
 			console.log(fd)
 
-			Axios.post('http://localhost:4000/product', fd)
+			Axios.post('https://upload-system-api.herokuapp.com/product', fd)
 			.then((res)=>{
 				console.log(res.data)
 				alert(`Added success`)
